@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700;900&family=Outfit:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+    transition: all ease 0.2s;
+    list-style-type: none;
+}
+
+:root {
+    --brown: hsla(24, 56%, 63%, 1);
+    --black: hsla(0, 0%, 8%, 1);
+    --gray: hsla(0, 0%, 27%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+}
+
+header {
+    background: linear-gradient(270deg, #FFFFFF 50%, hsla(0, 0%, 8%, 1) 50%);
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 20px;
+}
+
+.hero-section {
+    display: flex;
+    padding-block: 190px 300px;
+    margin-bottom: 180px;
+    background-repeat: no-repeat;
+    background-image: url(./assets/desktop/image-hero.jpg);
+    background-position: 50% 50%;
+    justify-content: space-between;
+}
+
+.hero-image-mobile {
+    display: none;
+}
+
+.h1-heading {
+    mix-blend-mode: difference;
+    color: var(--white);
+    text-transform: uppercase;
+    font: 900 "Big Shoulders" Display;
+    line-height: 88px;
+    font-size: 59.7px;
+    width: 514px;
+
+
+}
+
+
+.btn {
+    display: flex;
+    max-width: 204px;
+    background-color: var(--black);
+    justify-content: left;
+}
+
+.btn-link {
+    padding: 24px 35px;
+    font: 600 20px/20px'Big Shoulders Display', sans-serif;
+    letter-spacing: 3.2px;
+    color: var(--white);
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+}
+
+.body-m {
+    color: var(--gray);
+
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    /* 145.455% */
+    max-width: 18.75rem;
+}
+
+
+.grid {
+    display: grid;
+    gap: 30px;
+    margin-block: 180px;
+    max-width: 100%;
+    grid-template-columns: 1fr 10rem 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        't1 t2 t2'
+        'l1 l1 r1'
+        'l1 l1 r2';
+    transition: all ease 0.5s;
+}
+
+.top-feature-left {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 32px;
+    background-color: #ececec;
+    grid-area: t1;
+}
+
+.heading-m {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Big Shoulders Display";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    width: 350px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.body-m {
+    font: 300 1.125rem/2rem 'Outfit', sans-serif;
+    color: var(--gray);
+}
+
+.top-feature-right {
+    display: flex;
+    grid-area: t2;
+    max-width: 100%;
+    overflow: hidden;
+    width: 635px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.left-feature {
+    display: flex;
+    grid-area: l1;
+    max-width: 100%;
+    overflow: hidden;
+    width: 635px;
+    height: 720px;
+    flex-shrink: 0;
+}
+
+.right-feature-1 {
+    display: flex;
+    grid-area: r1;
+    max-width: 100%;
+    overflow: hidden;
+    width: 445px;
+    height: 313px;
+    flex-shrink: 0;
+}
+
+.right-feature-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-area: r2;
+    max-width: 100%;
+    padding: 50px;
+    background-color: var(--black);
+    width: 445px;
+    height: 377px;
+    flex-shrink: 0;
+}
+
+.body-m-white {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.heading-m-white {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Big Shoulders Display;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: var(--black);
+    padding-block: 3.5rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1.875rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.social svg {
+    display: flex;
+    height: 1.875rem;
+    width: 1.875rem;
+    fill: white;
+    gap: 2.5rem;
+}
+
+.social svg:hover {
+    fill: var(--brown);
+}
+
+
+.location {
+    background-color: var(--brown);
+}
+
+.bg {
+    background-color: var(--black);
+}
+
+
+
+
+
+.logo {
+    width: 159.572px;
+    height: 58px;
+    flex-shrink: 0;
+}
+
+.body-xs {
+    color: var(--White, #FFF);
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    /* 155.556% */
+    width: 430px;
+    flex-shrink: 0;
+}
